@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Khetan Sports Foundation</title>
+  <style>
+    :root {
+      --primary-red: #e63946;
+      --primary-blue: #1d3557;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: var(--white);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex: 1;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    .menu-container {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex: 2;
+      justify-content: center; /* Centering nav links */
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--primary-blue);
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary-red);
+    }
+
+    .support-button {
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+    }
+
+    .support-button a {
+      background-color: var(--primary-blue);
+      color: var(--white);
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .support-button a:hover {
+      background-color: var(--primary-red);
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background-color: var(--primary-blue);
+      margin: 5px 0;
+      transition: background-color 0.3s;
+    }
+
+    .menu-toggle:hover div {
+      background-color: var(--primary-red);
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .menu-container {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--white);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 10px 0;
+        z-index: 10;
+        margin-top: 10px;
+      }
+
+      .menu-container.active {
+        display: flex;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .support-button {
+        margin-top: 10px;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+  </div>
+    
+      <div class="logo">
+        <div style="display: flex; align-items: center;">
+        <img src="https://scontent.fccu11-1.fna.fbcdn.net/v/t39.30808-6/244167356_233873188755311_916855958180794712_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=HbxtrWAABdsQ7kNvwFHVm7x&_nc_oc=AdkQ0gT9p-zchn_wEzSc5AqbzYPLhvmZnCBfp6DYL9AZ3jiQYvTL44N_hU2-_vXXafxfm2DnUUzIlLXnFEiexf8i&_nc_zt=23&_nc_ht=scontent.fccu11-1.fna&_nc_gid=YGbPNpjL7_tSQo0vjSqm0Q&oh=00_AfGzDTb6hMEeFVhVVoSj1m5lhSeYv-fomn8j2u7FkBdiiA&oe=681594D4" alt="Highway Truck Training Logo" style="height: 70px;" />
+      </div>
+      <div style="margin-left: 15px; font-family: Oswald; font-size: 22px; line-height: 1.2;">
+        <div>Khetan</div>
+        <div>Sports Foundation</div>
+      </div>
+    </div>
+  </div>
+    <div class="menu-toggle" id="menu-toggle">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="menu-container" id="menu-container">
+      <nav class="nav-links">
+        <a href="#aboutus">About us</a>
+        <a href="#sports">Sports</a>
+        <a href="#partners">Our Partners</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#">Campaigns</a>
+        <a href="#impact">Impact</a>
+      </nav>
+
+      <div class="support-button">
+        <a href="#">Support</a>
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+  <section class="hero-image">
+    <img src="C:\Users\ARKA\Downloads\IMG-20250428-WA0047 (1) (1).jpg" alt="Simply Sport Team">
+  </section>
+<style>
+  .hero-image {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 60vh;
+  display: block;
+  object-fit: cover;
+}
+
+</style>
+
+
+
+
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menuContainer = document.getElementById('menu-container');
+
+    toggle.addEventListener('click', () => {
+      menuContainer.classList.toggle('active');
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="about-section">
+  
+     <h1>
+        About Khetan Sports Foundation
+      </h1>
+     <br> <p>
+        <strong>Khetan Sports Foundation (KSF)</strong> is a non-profit organization committed for transforming grassroots sports in Nepal. By supporting young athletes, especially from underrepresented communities, KSF promotes equal opportunity and inclusive growth. Through partnerships, training, and expert-led programs, we enable athletes to thrive on and off the field. Our mission is to build a strong sporting ecosystem driven by passion, discipline, and innovation.
+      </p>
+   
+  </section>
+  
+
+<style>
+  .about-section {
+    padding: 40px 20px;
+    text-align: justify;
+  }
+
+  .about-section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+ 
+  }
+
+  .about-section p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .about-section p {
+      max-width: 1000px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .about-section p {
+      max-width: 900px;
+    }
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="focus-area">
+  <h2>Areas of focus</h2>
+  <h3 class="subtitle">We have directed our initiatives towards creating an impact in the grassroots sports ecosystem.</h3>
+
+  <div class="focus-cards">
+    <div class="card">
+      <img src="https://scontent.fccu27-1.fna.fbcdn.net/v/t39.30808-6/471189730_2300200767009209_708832622152558689_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=npX5HMW_V8EQ7kNvwFhrSCD&_nc_oc=AdlTThjWCEuAB3V5ux5bCApTn9MfBzqg_6fRah7hD7jfq-iNWdb8mGQV_1jVkZxWqZkmvwzB_EyV2NltW2zb5Nwa&_nc_zt=23&_nc_ht=scontent.fccu27-1.fna&_nc_gid=7o1JgeXGfVtjeMXOtKWAPA&oh=00_AfFQev7FdJRcG-Z61vaexH-4fjlpi-28NzrRQ5JOFUe-0w&oe=681AC1CD" alt="Grassroots support">
+      <h3>Grassroots sports support</h3>
+      <p>
+        We work with our partner academies, focusing on grassroots sports. We provide the necessary interventions to help athletes with the all-around development they need to fulfil their sporting dreams.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="https://scontent.fccu11-1.fna.fbcdn.net/v/t1.6435-9/116807872_1168205140208783_5180954411922581612_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=-_ZV4P6XOrEQ7kNvwE1x-qa&_nc_oc=AdkAgUCHkI8vEirgt-UcKzLFpEZok3IV_4ykK8KWASFHCCddH99Ac6K3HmumGCQiCC0J5iiCXrjNN8dlrAmQQVj-&_nc_zt=23&_nc_ht=scontent.fccu11-1.fna&_nc_gid=-KpoTHtmcuqGkYW7aO_PiQ&oh=00_AfE5h81jIVXDIK4R4A_7R0GjmvDNTfhOY2_XiUB9Yc6u8Q&oe=683C36E2" alt="Sports science">
+      <h3>Sports science interventions</h3>
+      <p>
+        We provide our partner academies access to sports science experts. Strength & conditioning coaches, nutritionists and sports psychologists interact with athletes through online and offline workshops.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="https://scontent.fccu20-1.fna.fbcdn.net/v/t1.6435-9/159920233_1337638606598768_3707337513595028265_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Uo5mqdq28I0Q7kNvwGOzPlP&_nc_oc=AdkEb8X1Pg8YFDv3QrijysWcQcIbLnRGiSIS5LH3aZO82hI4Uh8NfxooPTFynBi-JTumX-vsPtnZLcbY0TKwHhnX&_nc_zt=23&_nc_ht=scontent.fccu20-1.fna&_nc_gid=gVrc54AfYE2MU7Tqq2EbMA&oh=00_AfF5Hk4MUXDSjQGsk8SSxvYgrGk5ycD15e5auO44DRMYiA&oe=683C361B" alt="Women in sports">
+      <h3>Women in Sports</h3>
+      <p>
+        We promote the participation of women in sports in India by addressing the underlying issues like access and stereotypes through different channels.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="https://scontent.fccu27-2.fna.fbcdn.net/v/t1.6435-9/115931654_1168205230208774_1835980616495566877_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=D8fSwZ8BOCsQ7kNvwGkuFn1&_nc_oc=AdnqE1pnEVqrfSz_l7ofl953S4h6Minv5WCEX25EjwIEBIQMoCySWg59Z5f8_TOSsW3l8qjqFa5EgkHxatEbYbR1&_nc_zt=23&_nc_ht=scontent.fccu27-2.fna&_nc_gid=Y_LaTs_7ffuHbZG8K5o3aA&oh=00_AfE13HY7p2dQAv33izrJjtjRdD4Rmv-gxB40Qx2gXPVhow&oe=683C506E" alt="SAI partnership">
+      <h3>SAI partnership</h3>
+      <p>
+        We have partnered with Sports Authority of India to provide support in the areas of sports science, equipment, expertise, tech support, and research to amplify our impact and reach.
+      </p>
+    </div>
+  </div>
+</section>
+<style>
+  .focus-area {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.focus-area h2 {
+  font-size: 2rem;
+  color: #0056a0;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.focus-area .line {
+  width: 30px;
+  height: 3px;
+  background: #0056a0;
+}
+
+.focus-area .subtitle {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.focus-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #000b33;
+  color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 16px 0 10px;
+}
+
+.card p {
+  padding: 0 16px 20px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+<section style="background-color: #050933; padding: 40px 20px;">
+  <div style="max-width: 1000px; margin: 0 auto; color: #ffffff;">
+    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; text-align: justify;">
+      Khetan Sports Foundation is a non-profit organization dedicated to empowering young athletes across India through access to quality training, infrastructure, and opportunities. Committed to building a strong grassroots sports ecosystem, the foundation focuses on nurturing talent from underserved communities. By promoting inclusivity, gender equality, and physical well-being, Khetan Sports Foundation strives to create lasting social impact through sports. Through partnerships, mentorship programs, and community-driven initiatives, the foundation helps aspiring athletes reach their full potential both on and off the field. Their mission is to inspire change, foster discipline, and shape future champions who can represent India with pride and passion.
+    </p>
+   <center> <a href="#" style="display: inline-block; background-color: #ef3f45; color: #ffffff; padding: 12px 20px; text-decoration: none; font-weight: bold; font-size: 1rem; border-radius: 4px;">
+      DONATE US &nbsp; → 
+    </a></center>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 600px) {
+    section p {
+      font-size: 1rem !important;
+    }
+
+    section a {
+      font-size: 0.95rem !important;
+      padding: 10px 16px !important;
+    }
+  }
+</style>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sports</title>
+  <style>
+ body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .team-section {
+      padding: 60px 20px;
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      justify-items: center;
+    }
+
+    .team-member {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .team-member:hover {
+      transform: translateY(-5px);
+    }
+
+    .team-member img {
+      width: 220px;
+      height: 270px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .team-member h4 {
+      font-size: 20px;
+      margin: 10px 0 5px;
+      color: #222;
+    }
+    .team-section1 h1 {
+  font-size: 3rem;
+  color: #0056a0;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+    .team-member p {
+      font-size: 16px;
+      color: #555;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .team-member img {
+        width: 180px;
+        height: 220px;
+      }
+
+      .team-member h4 {
+        font-size: 18px;
+      }
+
+      .team-member p {
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .team-member img {
+        width: 220px;
+        height: 250px;
+      }
+
+      .team-member h4 {
+        font-size: 17px;
+      }
+
+      .team-member p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="sports" id="sports">
+<div class="team-section">
+  <div class="team-section1"><center><h1>SPORTS</h1></center><br><br></div>
+  <div class="team-grid">
+    <div class="team-member">
+      <img src="https://media.newyorker.com/photos/6579d39668872af306a7c711/1:1/w_1703,h_1703,c_limit/Webster-Shouts-Cricket.jpg" alt="Arvind Bhat">
+      <h2>CRICKET</h2>
+     
+    </div>
+    <div class="team-member">
+      <img src="https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/h_484,c_limit/c6b4ab4e-95fc-435e-af61-0740b44c4bde/what-are-the-positions-in-football.jpg" alt="Akhilesh Mahto">
+      <h2>FOOTBALL</h2>
+      
+    </div>
+    <div class="team-member">
+      <img src="https://blog.playo.co/wp-content/uploads/2018/09/Img270800221.jpg" alt="Vinod H V">
+      <h2>BADMINTON</h2>
+      
+    </div>
+    <div class="team-member">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Rugby_tackle_cropped.jpg" alt="Jestin Jiji">
+      <h2>RUGBY</h2>
+      
+    </div>
+    <div class="team-member">
+      <img src="https://www.thesun.co.uk/wp-content/uploads/2019/02/Ronaldinho21.jpg?strip=all&w=960" alt="Kornelius Mujiono">
+      <h2>TEQBALL</h2>
+      
+    </div>
+    <div class="team-member">
+      <img src="https://floridatechsports.com/images/2025/4/17/GNK09161-Enhanced-NR.jpg?width=351&height=528&mode=crop&scale=both&format=jpg&quality=80&anchor=middlecenter" alt="Anurag">
+      <h2>SOFTBALL</h2>
+      
+    </div>
+    <div class="team-member">
+      <img src="https://ss-i.thgim.com/public/photos/article35426302.ece/alternates/FREE_385/Birendra-Lakrajpg" alt="Anvar Dayal">
+      <h2>HOCKEY</h2>
+      
+    </div>
+    <div class="team-member">
+      <img src="https://cdn1.sportngin.com/attachments/photo/afd1-185924803/AA5I2400-12_wm_large.jpg" alt="Tapas Singh">
+      <h2>FUTSAL</h2>
+      
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="aboutus" id="aboutus">
+<div>
+
+<section style="padding: 40px 20px; max-width: 1200px; margin: auto; font-family: 'Segoe UI', sans-serif; line-height: 1.8;">
+ <center> <h2 style="font-size: 32px; color: #003366; font-weight: bold; margin-bottom: 20px;">About Us – Khetan Sports Foundation</h2><br></center>
+  <p style="font-size: 18px; color: #333; text-align: justify;">
+    Khetan Sports Foundation is a passionate not-for-profit organization dedicated to transforming lives through the power of sports. 
+    Founded with a vision to build an inclusive, vibrant sporting culture in India, the foundation is focused on promoting grassroots 
+    development, empowering young athletes, and addressing the gaps in access, opportunity, and awareness within the Indian sports ecosystem.
+  </p><br>
+  <p style="font-size: 18px; color: #333; text-align: justify;">
+    At the heart of our mission lies the belief that sports can be a powerful agent of change — encouraging discipline, teamwork, 
+    leadership, and resilience. We aim to harness these qualities to help shape confident individuals who not only strive for 
+    sporting excellence but also grow into responsible, empowered citizens. Through carefully designed programs, outreach initiatives, 
+    and partnerships with schools, academies, coaches, and communities, Khetan Sports Foundation supports the holistic development of 
+    youth across the country.
+  </p><br>
+  <p style="font-size: 18px; color: #333; text-align: justify;">
+    Our initiatives span across multiple dimensions. We offer professional training and coaching support, enabling young talent — 
+    particularly those from underrepresented or economically challenged backgrounds — to access opportunities that were previously 
+    out of reach. We believe that talent exists everywhere, and with the right guidance and infrastructure, anyone can rise and 
+    shine on national and international platforms.
+  </p><br>
+  <p style="font-size: 18px; color: #333; text-align: justify;">
+    Beyond just training, we focus on athlete well-being through nutrition awareness, mental health support, and sports science 
+    interventions. We work closely with experts such as dieticians, physiotherapists, and psychologists to ensure that each athlete 
+    receives a well-rounded developmental experience. Our programs are tailored to build sustainable ecosystems that not only nurture 
+    future champions but also strengthen community engagement with sports at large.
+  </p><br>
+  <p style="font-size: 18px; color: #333; text-align: justify;">
+    In our efforts to foster inclusion, we pay special attention to the challenges faced by female athletes. Through education, 
+    mentorship, and targeted campaigns, we work to eliminate stigma around issues like menstruation and promote gender equality 
+    in sports. Our “Women in Sports” initiative actively engages girls and women from various communities, offering them the 
+    confidence and support to pursue sports fearlessly.
+  </p><br>
+  <p style="font-size: 18px; color: #333; text-align: justify;">
+    Collaboration is key to our success. We have partnered with national and regional sports organizations, educational institutions, 
+    and thought leaders to amplify our impact. Through joint ventures, workshops, training camps, and tournaments, we continue to 
+    reach more aspiring athletes and build a network of support that is both scalable and sustainable.
+  </p><br>
+  <p style="font-size: 18px; color: #333; text-align: justify;">
+    Khetan Sports Foundation is more than just a sports NGO — it’s a movement to inspire a generation. Our work is driven by a 
+    passionate team of coaches, volunteers, strategists, and community leaders who believe in the transformative magic of sports. 
+    With each child we support, each barrier we break, and each community we uplift, we take a step closer to our vision of a 
+    fitter, stronger, and more united India.
+  </p><br>
+  <p style="font-size: 18px; color: #333; text-align: justify;">
+    We invite you to be a part of this journey. Whether you are a young athlete, a mentor, a partner, or a supporter — your 
+    involvement can spark change. Together, let’s champion a future where every child has the opportunity to dream, play, and excel.
+  </p>
+</section<><br>
+</div>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impact Section</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .impact-section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .impact-title {
+      font-size: 35px;
+      font-weight: bold;
+      color: #005aa7;
+      margin-bottom: 30px;
+
+      align-items: center;
+    }
+
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .impact-box {
+      background: white;
+      border-radius: 12px;
+      padding: 30px 20px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .impact-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .impact-number {
+      font-size: 36px;
+      color: #005aa7;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .impact-text {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      .impact-title {
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
+
+      .impact-number {
+        font-size: 30px;
+      }
+
+      .impact-text {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="impact" id="impact">
+  <div class="impact-section">
+   <center> <h1 class="impact-title">Impact</h1></center>
+    <div class="impact-grid">
+      <div class="impact-box">
+        <div class="impact-number">100+</div>
+        <div class="impact-text">Sports Events supported throughout it’s inception.</div>
+      </div>
+      <div class="impact-box">
+        <div class="impact-number">500+</div>
+        <div class="impact-text">National & International Players from Nepal covered through various campaigns.</div>
+      </div>
+      <div class="impact-box">
+        <div class="impact-number">30+</div>
+        <div class="impact-text">Working with various District, State, National Sports Federations to support & promote sports in the country.</div>
+      </div>
+      <div class="impact-box">
+        <div class="impact-number">4</div>
+        <div class="impact-text">Working with Lions, Leo Welfare Clubs</div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Partners</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .partners-section {
+      text-align: center;
+      padding: 40px 20px;
+      width: 69%;
+      
+    }
+
+    .partners-section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .partners-carousel {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  -webkit-overflow-scrolling: touch;
+  
+}
+
+.partners-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.partner-logo {
+  flex: 0 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.partner-logo img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 50%;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .partners-section {
+      text-align: center;
+      padding: 40px 20px;
+      width: 90%;
+      
+    }
+
+  .partners-section h2 {
+    font-size: 1.5em;
+  }
+
+  .partners-carousel {
+    display: flex;
+  align-items: center;
+  
+  scroll-behavior: smooth;
+  gap: 10px;
+
+  background-color: #ffffff;
+  border-radius: 12px;
+  -webkit-overflow-scrolling: touch;
+  
+  }
+ 
+  .partner-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .partner-logo img {
+    max-width: 70%;
+    max-height: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-section h2 {
+    font-size: 2.0em;
+  }
+
+  .partner-logo {
+    width: 65px;
+    height: 65px;
+  }
+
+  .partner-logo img {
+    max-width: 65%;
+    max-height: 65%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <section class="partners" id="partners">
+<center>
+  <section class="partners-section">
+    <h2>OUR PARTNERS</h2>
+    <div class="partners-carousel">
+      <div class="partner-logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWPDhKw2DfKCNX-BHP-lvFE87Ga2iCGz6rMg&s" alt="Partner 1">
+      </div>
+      <div class="partner-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d1/Nepal-Badmintion-association.png" alt="Partner 2">
+      </div>
+      <div class="partner-logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLnDd8kAhSa38Vf35exc_2NNQbbb-BCHqrmA&s" alt="Partner 3">
+      </div>
+      <div class="partner-logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkaK2XtTO6jzRdNL0JrlJHMJHY_GhZMfQYFA&s" alt="Partner 4">
+      </div>
+      <div class="partner-logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW3Y7rwcz_9aUaeG0wnTDrgQjMyJBSU07zJA&s" alt="Partner 5">
+      </div>
+      <div class="partner-logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3bhpGp_zPXDkSZT05urXU7atoHXL7ZWeKDA&s" alt="Partner 6">
+      </div>
+      <div class="partner-logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWrQ7B35gmLfvodo_0Bncu-vBbWrTAdKzFBxdXB2T3_gXPoT2STy9K6WQKpklxOl7OnZc&usqp=CAU" alt="Partner 2">
+      </div>
+      <div class="partner-logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTySXGQ5-_LEvNydJpPm89LYlf5-tOyzmpLGw&s" alt="Partner 2">
+      </div>
+      <div class="partner-logo">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvK07hwXC38kRdOD7cpX9qNlLWXNPDCU9iGLy6SkH0sqsN_q0XcmAmaeFwPxySrTzH7pny9daDSQx1Ai2h0P56lwuIUUqb7Fv-fKYEDUk7JMc5xoqunLSGGpAAUdsJEjjjtIjSq4xCDca306pJIFrJ2RzbyhCT0bmuiGPVypKoDXRj8UAEZyP1ZZ3nCvQ/s320/34fbd69d369c406dd0b822bca0b8f822.jpg" alt="Partner 2">
+      </div>
+      <div class="partner-logo">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcadTxUu4mO4U9Q8cMYNEbpAl6rb3F1of4ZM6CZwNXa7JKxFduLN2GUsBuRJUaOuOkc3RaU5ygLlAZxaJVpdDjWmx7YvmHZgmDZ0OWx41SpHyRGt02cgUQc9IdmHaf9-1WDx6zNLDv8IO2sm1L9UCYj9t2j5MhqEbV3UjXO-8c9hszRw72SBEqh5qtNfk/s320/467111714_2973282169490136_823160283765699643_n.jpg" alt="Partner 2">
+      </div>
+      <!-- Add more logos as needed -->
+    </div>
+  </section>
+</center>
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Truck Driver Training</title>
+  <style>
+ 
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px 15px;
+    }
+
+    .form-section, .map-section {
+      flex: 1 1 400px;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    .form-section h1 {
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .form-section p {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      font-weight: bold;
+      padding: 15px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .submit-btn:hover {
+      background-color: #333;
+    }
+
+    .map-section {
+     
+      padding: 20px;
+    }
+
+    .map-section h3 {
+      color: rgb(0, 0, 0);
+     
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+      margin-top: 150px;
+    }
+
+    @media (max-width: 768px) {
+      .form-section h1 {
+        font-size: 24px;
+      }
+      iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+      margin-top: 20px;
+    }
+
+    }
+  </style>
+</head>
+<body>
+  <section class="contact" id="contact">
+<div class="container">
+  <div class="form-section">
+    <h1>Contact Us</h1>
+    <p>Please fill the form, Call or Visit Us</p>
+    <form id="bookingForm">
+      <div class="form-group">
+        <label>Name <span style="color:red">*</span></label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label>Mobile No <span style="color:red">*</span></label>
+        <input type="tel" id="mobile" required>
+      </div>
+  
+      <div class="form-group">
+        <label>Email <span style="color:red">*</span></label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea id="message" placeholder="Write your message here"></textarea>
+      </div>
+      <button type="button" class="submit-btn" onclick="sendEmail()">SEND MESSAGE</button>
+    </form>
+  </div>
+  
+  <div class="map-section">
+ <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3382.7764081913706!2d115.99833917636933!3d-32.02116982574935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bfb1ed0021a1%3A0x206c75e40692a773!2s145%20Victoria%20Rd%2C%20Kenwick%20WA%206107%2C%20Australia!5e0!3m2!1sen!2sin!4v1746022289773!5m2!1sen!2sin" allowfullscreen></iframe>
+  </div>
+</div>
+
+<script>
+  function sendEmail() {
+    const name = document.getElementById("name").value;
+    const mobile = document.getElementById("mobile").value;
+    const training = document.getElementById("training").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    const subject = encodeURIComponent("New Truck Driver Training Booking Request");
+    const body = encodeURIComponent(
+      `Name: ${name}\nMobile No: ${mobile}\nTraining: ${training}\nEmail: ${email}\n\nMessage:\n${message}`
+    );
+
+    const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=khetansportsfoundation@gmail.com&su=${subject}&body=${body}`;
+
+    window.open(mailtoLink, '_blank');
+  }
+</script>
+
+</section>
+
+</body>
+</html>
+
+
+
+<br>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Footer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+
+    .site-footer {
+      background-color: #111;
+      color: #fff;
+      width: 100%;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px 20px;
+      gap: 20px;
+    }
+
+    .footer-column {
+      flex: 1;
+    }
+
+    .footer-column h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
+    }
+
+    .footer-column p,
+    .footer-column ul li a {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #ffffff;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+      border-top: 1px solid #333;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .footer-content {
+        flex-direction: column;
+        padding: 20px 15px;
+        gap: 50px;
+      }
+
+      .footer-column {
+        padding: 0;
+        margin: 0;
+      }
+
+      .footer-column h3 {
+        margin-bottom: 6px;
+      }
+
+      .footer-column p,
+      .footer-column ul li {
+        font-size: 13px;
+        margin-bottom: 5px;
+      }
+
+      .footer-bottom {
+        font-size: 12px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <p>
+          Khetan Sports Foundation is a non-profit organization dedicated to empowering young athletes across Nepal through access to quality training, infrastructure, and opportunities.
+        </p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#aboutus">About us</a></li>
+          <li><a href="#sports">Sports</a></li>
+            <li><a href="#partners">Our Partners</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#">Campaigns</a></li>
+                  <li> <a href="#impact">Impact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>Email: khetansportsfoundation@gmail.com</p>
+        <p>Phone: +977 9802057355</p><br>
+        <p>Social Welfare Council of Nepal</p>
+         <p> Affiliation No.: 58071
+          </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Khetan Sports Foundation. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
