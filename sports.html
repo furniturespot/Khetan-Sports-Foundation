@@ -6,9 +6,9 @@
   <title>Khetan Sports Foundation</title>
   <style>
     :root {
-      --primary-red: #ffe600;
+      --primary-red: #005aa7;
       --primary-blue: #ff0000;
-      --white: #ffffff;
+      
     }
 
     body {
@@ -100,41 +100,106 @@
     .menu-toggle:hover div {
       background-color: var(--primary-red);
     }
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
 
-    /* Mobile responsiveness */
-    @media (max-width: 768px) {
-      .menu-container {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: var(--white);
-        position: absolute;
-        top: 70px;
-        left: 0;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        padding: 10px 0;
-        z-index: 10;
-        margin-top: 10px;
-      }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  flex-direction: column;
+  padding: 10px 0;
+}
 
-      .menu-container.active {
-        display: flex;
-      }
+.dropdown-content a {
+  padding: 10px 20px;
+  text-align: left;
+  text-decoration: none;
+  color: var(--primary-blue);
+  display: block;
+  transition: background-color 0.3s;
+}
 
-      .nav-links {
-        flex-direction: column;
-        gap: 20px;
-      }
+.dropdown-content a:hover {
+  background-color: #f3f3f3;
+}
 
-      .support-button {
-        margin-top: 10px;
-      }
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
 
-      .menu-toggle {
-        display: flex;
-      }
+@media (max-width: 768px) {
+
+
+
+  /* Optional: fix dropdown styling in mobile */
+  .dropdown-content {
+    background-color: white; /* Ensure dropdown is also white */
+  }
+
+
+
+  @media (max-width: 768px) {
+  .menu-container {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white; /* ✅ Add this line */
+    position: absolute;
+    top: 70px;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px 0;
+    z-index: 10;
+    margin-top: 10px;
+  }
+
+  .menu-container.active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .support-button {
+    margin-top: 10px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Optional: fix dropdown styling in mobile */
+  .dropdown-content {
+    background-color: white; /* Ensure dropdown is also white */
+  }
+}
+
     }
+    .hero-video {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.hero-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video fills the area like a background */
+  display: block;
+}
+
   </style>
 </head>
 <body>
@@ -144,7 +209,7 @@
     
       <div class="logo">
         <div style="display: flex; align-items: center;">
-        <img src="https://scontent.fccu11-1.fna.fbcdn.net/v/t39.30808-6/244167356_233873188755311_916855958180794712_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=HbxtrWAABdsQ7kNvwFHVm7x&_nc_oc=AdkQ0gT9p-zchn_wEzSc5AqbzYPLhvmZnCBfp6DYL9AZ3jiQYvTL44N_hU2-_vXXafxfm2DnUUzIlLXnFEiexf8i&_nc_zt=23&_nc_ht=scontent.fccu11-1.fna&_nc_gid=YGbPNpjL7_tSQo0vjSqm0Q&oh=00_AfGzDTb6hMEeFVhVVoSj1m5lhSeYv-fomn8j2u7FkBdiiA&oe=681594D4" alt="Highway Truck Training Logo" style="height: 70px;" />
+        <img src="https://scontent.fccu11-1.fna.fbcdn.net/v/t39.30808-6/244167356_233873188755311_916855958180794712_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=HbxtrWAABdsQ7kNvwFHVm7x&_nc_oc=AdkQ0gT9p-zchn_wEzSc5AqbzYPLhvmZnCBfp6DYL9AZ3jiQYvTL44N_hU2-_vXXafxfm2DnUUzIlLXnFEiexf8i&_nc_zt=23&_nc_ht=scontent.fccu11-1.fna&_nc_gid=YGbPNpjL7_tSQo0vjSqm0Q&oh=00_AfGzDTb6hMEeFVhVVoSj1m5lhSeYv-fomn8j2u7FkBdiiA&oe=681594D4" alt="Khetan-Sports-Foundation" style="height: 70px;" />
       </div>
       <div style="margin-left: 15px; font-family: Oswald; font-size: 22px; line-height: 1.2;">
         <div>Khetan</div>
@@ -160,12 +225,29 @@
 
     <div class="menu-container" id="menu-container">
       <nav class="nav-links">
-        <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/aboutksf.html">About us</a>
-        <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/sports.html">Sports</a>
-        <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/#partners">Our Partners</a>
-        <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/#contact">Contact Us</a>
-        <a href="#">Campaigns</a>
+        <div class="dropdown">
+          <a href="#">Who we are</a>
+          <div class="dropdown-content">
+            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/aboutksf.html">About KSF</a>
+            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/our%20mission.html">Our Mission</a>
+            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/our%20vision.html">Our Vision</a>
+            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/our%20team.html">Organization Structure</a>
+            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/ourpartners.html">Our Sponsors & Partners</a>
+          </div>
+        </div>
+        
+        <div class="dropdown">
+          <a href="#focus-area">Area of Focus </a>
+          <div class="dropdown-content">
+            <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/sports.html">Sports</a>
+            
+          </div>
+        </div>
+       
+       
+        <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/campagins.html">Campaigns</a>
         <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/#impact">Impact</a>
+        <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/contact.html">Contact Us</a>
       </nav>
 
       <div class="support-button">
@@ -178,9 +260,14 @@
 
 
 
-  <section class="hero-image">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEtUPCP9ngWnpl-j6IZNTHrSRWuVTcdY7Exf6DMcHpDREuSpq_iYGyEt255QE_B6WE7lQ6BmcAAbTJOZ2mzPjXXMirKVAKD1IZ43jxyRMeUttNWHAH8CJSQkLRyEJcdx-WpUKOLHZTdy_np9YWyJcnTJCSoeJfAeO6T5HQGRGa4LgQQdv6J6W61gXe8Bc/s8000/1000090564.jpg" alt="Simply Sport Team">
+  <section class="hero-video">
+    <video autoplay loop muted playsinline>
+      <source src="https://rr4---sn-gwpa-jj0e7.googlevideo.com/videoplayback?expire=1746401704&ei=KIkXaKDvG66fsfIPovXIgAU&ip=2409:40e0:1:5515:44d4:1a2b:b734:639&id=a457e9c2aece15bc&itag=18&source=blogger&xpc=Egho7Zf3LnoBAQ%3D%3D&met=1746372904,&mh=me&mm=31&mn=sn-gwpa-jj0e7&ms=au&mv=m&mvi=4&pl=36&rms=au,au&susc=bl&eaua=uN7j3T-ZPmc&mime=video/mp4&vprv=1&rqh=1&dur=10.518&lmt=1746372864925805&mt=1746372324&txp=1311224&sparams=expire,ei,ip,id,itag,source,xpc,susc,eaua,mime,vprv,rqh,dur,lmt&sig=AJfQdSswRQIgfKvo0D8EhxorW9qRo1QJbTvL8ZnkDynZgJzm_uhwBD4CIQDSDrViwoGNebWsyOMPsU1LjQI4PgTQbusW1WBawRoUAA%3D%3D&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=ACuhMU0wRAIgNYriPq24MW7TMs1DHnXOP1x3Y4st5MRNS13iL0nAYZQCIHlQ7RBC_WLFtbwH9h0glxz78zycXeJkgf-to-mJ0K6q&cpn=xSrNQ6bmeYxnGf-8&c=WEB_EMBEDDED_PLAYER&cver=1.20250429.10.00.if4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </section>
+  
+  
 <style>
   .hero-image {
   width: 100%;
@@ -209,6 +296,20 @@
       menuContainer.classList.toggle('active');
     });
   </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
 
 
 
@@ -396,6 +497,10 @@
 
 
 
+
+<br><br><br><br><br><br><br><br><br>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -449,6 +554,7 @@
       line-height: 1.5;
       color: #ffffff;
       text-decoration: none;
+      align-items: start;
     }
 
     .footer-column ul {
@@ -543,17 +649,18 @@
         <ul>
           <li><a href="https://furniturespot.github.io/Khetan-Sports-Foundation/aboutksf.html">About us</a></li>
             <li><a href="https://furniturespot.github.io/Khetan-Sports-Foundation/sports.html">Sports</a></li>
-              <li>  <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/#partners">Our Partners</a></li>
-                <li> <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/#contact">Contact Us</a></li>
-                  <li><a href="#">Campaigns</a></li>
+              <li>  <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/#partners">Our Sponsors & Partners</a></li>
+             
+                  <li><a href="https://furniturespot.github.io/Khetan-Sports-Foundation/campagins.html">Campaigns</a></li>
                     <li><a href="https://furniturespot.github.io/Khetan-Sports-Foundation/#impact">Impact</a></li>
+                    <li> <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/#contact">Contact Us</a></li>
         </ul>
       </div>
       <div class="footer-column">
         <h3>Contact Us</h3>
-        <p>Email: khetansportsfoundation@gmail.com</p>
-        <p>Phone: +977 9802057355</p><br>
-        <p>Social Welfare Council of Nepal</p>
+        <p><strong>Email:</strong> khetansportsfoundation@gmail.com</p>
+        <p><strong>Phone:</strong> +977 9802057355</p><br>
+        <p>Social Welfare Council, Nepal</p>
         <p>Affiliation No.: 58071</p>
         <div class="social-icons">
           <a href="https://www.facebook.com/khetansportsfoundation/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
