@@ -327,155 +327,167 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sports</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Partners</title>
   <style>
- body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fff;
+    body {
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
     }
 
-    .team-section {
-      padding: 60px 20px;
-      max-width: 1400px;
-      margin: auto;
-    }
-
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 40px;
-      justify-items: center;
-    }
-
-    .team-member {
-      background: #f9f9f9;
-      padding: 20px;
-      border-radius: 15px;
+    .partners-section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
       text-align: center;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
+    }
+    h1 {
+          font-size: 2.8em;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: #005aa7;
+        }
+
+    .partners-title {
+      font-size: 32px;
+      font-weight: bold;
+      color: #005aa7;
+      margin-bottom: 40px;
     }
 
-    .team-member:hover {
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+    }
+
+    .logo-box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+      width: 180px;
+      height: 180px;
+    }
+
+    .logo-box:hover {
       transform: translateY(-5px);
     }
 
-    .team-member img {
-      width: 220px;
-      height: 270px;
-      object-fit: cover;
-      border-radius: 12px;
-      margin-bottom: 15px;
-    }
-
-    .team-member h4 {
-      font-size: 20px;
-      margin: 10px 0 5px;
-      color: #222;
-    }
-    .team-section1 h1 {
-  font-size: 3rem;
-  color: #0056a0;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-    .team-member p {
-      font-size: 16px;
-      color: #555;
-      margin: 0;
+    .logo-box img {
+      max-width: 170%;
+      max-height: 120px;
+      object-fit: contain;
     }
 
     @media (max-width: 768px) {
-      .team-member img {
-        width: 180px;
-        height: 220px;
-      }
+  .logo-grid {
+    
+    justify-items: center;
+  }
 
-      .team-member h4 {
-        font-size: 18px;
-      }
+  .logo-box img {
+    max-height: 120px;
+  }
+  h1 {
+          font-size: 2em;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: #005aa7;
+        }
+}
 
-      .team-member p {
-        font-size: 15px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .team-member img {
-        width: 220px;
-        height: 250px;
-      }
-
-      .team-member h4 {
-        font-size: 17px;
-      }
-
-      .team-member p {
-        font-size: 14px;
-      }
-    }
   </style>
 </head>
 <body>
-  <section class="sports" id="sports">
-<div class="team-section">
-  <div class="team-section1"><center><h1>SPORTS</h1></center><br><br></div>
-  <div class="team-grid">
-    <div class="team-member">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhk2c_4VanM9f017UliB0osYgGBzmLHl4K0_HD1aw5BDjM00NoDmSUiGcd-cSvHffan-ZuRKlMaFj1R_QJkngNmS9V93Xgbe9PqVo3k05oKKBL3qf5n4eQ7V-vA12Qssd35sGNXdfEDWDQnMwAFfbI_Wj7e6X54DRBP1aEimXg5S8OYO8uECxGKKJ9_gyBo/s320/1000091100.jpg" alt="Arvind Bhat">
-      <h2>CRICKET</h2>
-     
-    </div>
-    <div class="team-member">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihLyYS8ZRI-JM6l08VLE6OPj0wVVMJToMFfT1Te9joNrEKwVKVEktl81s2m701cpHlBFQSzdsVHyrHc68WDsW6-p0HFZ8DMw6wBn9P9q59sr0-u-ccWX4_mTwpKbrTHMMe4a-rVvkGqLaGC3El1HotESjPTqHKJE_ql6qEIoK5hbezluoG8Zsf8aULhJdM/s320/1000091101.webp" alt="Akhilesh Mahto">
-      <h2>FOOTBALL</h2>
-      
-    </div>
-    <div class="team-member">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijjimWtUlAW6qlFzTTfPl-8qtbBhExtoELygjxHn22cjcU27ergliq8ZxtNW8_1UX9ucl0yw04KGr1LDCZDW3rYP-BPEDE6hSPO94kcbwt4NlcL2XFMdPOeJB85apk4FATKyyizt9FcnIMnVzhA9g8XkQqaIliTpClgJ89b73hyphenhyphenhoh7R0RBAGpZB24j7pg/s320/1000091099.jpg" alt="Vinod H V">
-      <h2>BADMINTON</h2>
-      
-    </div>
-    <div class="team-member">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Rugby_tackle_cropped.jpg" alt="Jestin Jiji">
-      <h2>RUGBY</h2>
-      
-    </div>
-    <div class="team-member">
-      <img src="https://www.thesun.co.uk/wp-content/uploads/2019/02/Ronaldinho21.jpg?strip=all&w=960" alt="Kornelius Mujiono">
-      <h2>TEQBALL</h2>
-      
-    </div>
-    <div class="team-member">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsEe8sA9CoaeQFD1IDkLTJRihdXkss0aOr-ZqWPvDBsNOk4KrUoZ8sG17rTrnQZXeci5WMKjm3KnPHlXppV6iWqsYWwWYn0myZeJaSukfP0OGC7SfBsizavob36BA1YNS7lhk2cY6iK3H-7hsCzb4Ci6KD5Jlk_3aE6T5Aarwe5ksUZ6Rc64YUSCQKkz3e/s320/1000091103.jpg" alt="Anurag">
-      <h2>SOFTBALL</h2>
-      
-    </div>
-    <div class="team-member">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheaIuDoIwZn_fSliXl9CehVx1Iy2V70VzLWP6yKmcYB0zE_diWVPFQlwrw-NQtDQODoonsOHWFAUeEPrYXKpAo3lg9W8tkkl9HGNaMFn4hFucmMPq6-P0m3Z5BmjEWa24l39RJmXp_xGmQyOQzHWzj71Bo_lxdzVYKRdOV9ypQBA0FKPQXLjTiuFdWop-N/s320/1000091102.jpg" alt="Anvar Dayal">
-      <h2>HOCKEY</h2>
-      
-    </div>
-    <div class="team-member">
-      <img src="https://cdn1.sportngin.com/attachments/photo/afd1-185924803/AA5I2400-12_wm_large.jpg" alt="Tapas Singh">
-      <h2>FUTSAL</h2>
-      
-    </div>
-  </div>
-</div>
-</section>
 
-</section>
+  <section class="partners-section">
+    <center> <h1>OUR SPONSORS AND PARTNERS</h1></center><br><br>
+    <div class="logo-grid">
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir9Y4EFscKq1RfGftpilgT4PMj6Ur24hrfJw_YFWLMp32ZAD3YsnGFpQiKvWmYCoEEvmDFxEazfJYlPkct4w0gfs6aILnroXkMS-5zJNE50FPtsbAL5hbZS7uuyVMQ2CLndsnqQZUhBmILEGf7Ae36KvdbAGKPQ8hv-svMbiEZV8Ox5PC6JP3EU-DdVF2t/s320/1000091050.png" alt="FedEx Logo" />
+      </div>
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg696x_LJ8FJwNHrM716RJnVnlp2JfN47BTKqqE7MwQG1N6MNENWbCXgIW05N2NDL4LbbkcK6zpsHzp8yD-JkabiRyI2XzG4c22-XAnOigZilxyB3FqCt1CHynWO2xdoPEI1HvtkNg5WJ0CP-HLiAiqDjOnebjCz8UU1XXrV9SQRQY4PsQy3IxhVz1lZDeX/s320/1000091048.png" alt="EU Logo" />
+      </div>
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwMvJ0R-F3WVnSkyaUBUen780D7PMywvcogCuwbHep2B_xw85xWPp6xw8F4ivpP-h1KwBnsiJsoj64mCMyq2FG-Ow1HDOFFKXmuQBtqwlcUwUps9BkU3Bm2GOzRccpFkdwKqlADqxM3Q5mEWkOuxTtdreHjdX3QxexPl-D81oBfEDKMKxV6mQUr1UICBRW/s320/1000091039.png" alt="Adidas Logo" />
+      </div>
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg46yZ8pQuA7WmnTiiT1wh9UHBy-4ugbH1IaK9IDg1AH4Tci2NJxwUOB3KfFcNQ6ZQyeFPTGWJTx8BCOxc-B05-ikRLfUDUSNuspASKXZemAHTxZXYZuxeqAnbv6nC46PBJDxZNf6rxgHTzfBmhRkMjD4I_OOKwvzeGaWzL-G7mT4Jgtnl1Kd-WWL2Wal-w/s320/1000091038.png" alt="Hankook Logo" />
+      </div>
+    </div><br>
+    <div class="logo-grid">
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHcpS_QHhCLC8F7NTLJjYqiA-QPbpDGB2pn2xGMM_bOK6Ls38HmDeZRStqe62lPNtHdtDuzggmR-PN9gaQJpX-n31gtwTub6jDDbL9-BDAIqs_W3gZfh0tvlUzyBxyaprSIiIwMVBp4L2I7yuiPz_EHXDjxDb2OQVkxwMD0vefnCVMRotCujvocpd3eLFx/s320/1000091042.png" alt="FedEx Logo" />
+      </div>
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiN2-QFlUHr4OBddtuNq9xz2Fj2xyY9VREWhOnfrw1fqY7dN0BeMfh3DVVK_pfniNqS52ciOyIXD2MfeKRekddoNPLwkzE74VNGly2kS6Nmg91AgIrDLgcz4PhR2YPm5rt89-lbLa7rX6ddIjF7vW24TNgeTH17NTX2Gx_QadwW8JUGYCZ9KH8jvMeUcb8e/s320/1000091043.png" alt="EU Logo" />
+      </div>
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxD1xH9-Ni8xyGsBSAVZRkThiKI6sbfAnyR9K-4giWy0Uzk3YFH5-phaUSo4-Kg65-Wu4EITBYZAdxslFH6uRYcxdVJBsc9eO4t0suCltCmwXCQiYq6nPqJSt9MRQLp4HRhjT78Wd2FKnA2J8Qk22AwUPta-G0woM1t46GTZtZ0Sjg-slfUuqC8ULrZgwQ/s320/1000091047.png" alt="Adidas Logo" />
+      </div>
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir5r964HAypeYvIqOMcc_KRLsa-TjXPqwfmsMXUl475yvor3gwRCouOEgD1ZdM4BFvW91-4zXIO_EZBssOewmBUyQtArAGe2e0nkjcK0UsUg4aR5IIqq10gYcr0e0SL4GM_PByYygfgjtr6LNSBjifBENBZIe1Se6b6CdxCoGemS4CtkXI5_AF8eZ7b4Y7/s320/1000091046.png" alt="Hankook Logo" />
+      </div>
+    </div><br>
+    <div class="logo-grid">
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2oUKLIN5r9gvUKZXt3PjvmreMwkez0YVmSgpF1c-kGnHNH9FlnlNe5HRc3V1gIWyKw_rhc0sRiJbtVI9OSmAK-PkK5-wj4SS7sWlFAS8Cg7pmsuCZIKGIVWe3jlXzOC0IPCq-BVAQSoUReN7AyRnZETHj3RyX7LL-XnoSIvzR2JnXnYbR1rUItC0hM1po/s320/1000091045.png" alt="Hankook Logo" />
+      </div>
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieOjM-JryXXvXOLHrGlxWadkPRVu4WBGhOivMIHcCAJdHfj57LAfnHK2LxzWiWcZDdnIHZmpA9LLo3h_7G-jpKQAa5CbuBOviQEMSlONBawenEzijVtEdZbuqx0w_J9abWtLmnd7Q5km2kHe81tZgBLdQqM92gaE3VNuCtxtp-7ej6drrDHQTFpLJIiNNy/s320/1000091049.png" alt="Hankook Logo" />
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
 
@@ -497,13 +509,17 @@
 
 
 
+      <br><br><br><br><br><br><br><br><br>
 
 
 
-<br><br><br><br><br><br><br><br><br>
 
 
-<!DOCTYPE html>
+
+
+
+
+      <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
