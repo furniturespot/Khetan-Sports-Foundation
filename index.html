@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Khetan Sports Foundation</title>
   <style>
+     /* Brand colors */
+     .fa-facebook-f { color: #1877f2; }
+    .fa-instagram { color: #e1306c; }
+    .fa-youtube   { color: #ff0000; }
+    .fa-twitter   { color: #1da1f2; }
+    .fa-linkedin-in { color: #0a66c2; }
+    .fa-threads   { color: #000000; }
+
     :root {
       --primary-red: #005aa7;
       --primary-blue: #ff0000;
@@ -22,8 +30,11 @@
       justify-content: space-between;
       padding: 10px 20px;
       background-color: var(--white);
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 120px 250px rgba(0, 0, 0, 0.1);
       position: relative;
+      border-bottom: #111;
+     
+     
     }
 
     .logo {
@@ -210,7 +221,7 @@
     
   <div class="logo">
     <div style="display: flex; align-items: center;">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFpj5eqrwAB3P6RbQNtr7ex_y_LCNEppkaIysuL1NwCsi7bp2MWR2iJZtJvx_wSs3ImBPqaZsQQNQ3eNpcyJ9JWVDVNCtlkgyHiYCPU6EhJJ41rpibZ_MXHhEgL8C7fzCDPrSa3FY_tt1wmuE4Xa_AWBfemrseVklUKbto65W21q_ElEnMA1n_NtLz6oM/s320/244167356_233873188755311_916855958180794712_n.jpg" alt="Khetan-Sports-Foundation" style="height: 70px;" />
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwg16zlSbAzrQZ8bBXlAsOpZR2rtWkGbL8obZN1MaKIhsoXVak8ekk7pmYe_UL7daMGG1e720bk6A8u2EDDA5w4CiVYT0zLLsStfZ3jd8WLjDd2L0yZX0ybyGkziuGx4wOZrNkC89LL-faIjdEBZn-pomXAWSoWVZllYdbYE2TXe3lRpfo4OjtqdJhN0zP/s320/1000091265.png" alt="Khetan-Sports-Foundation" style="height: 70px;" />
   </div>
       <div style="margin-left: 15px; font-family: Oswald; font-size: 22px; line-height: 1.2;">
        <strong> <div>KHETAN
@@ -248,7 +259,7 @@
         </div>
        
        
-        <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/campagins.html">News</a>
+        <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/news.html">News</a>
         <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/#impact">Impact</a>
         <a href="https://furniturespot.github.io/Khetan-Sports-Foundation/contact.html">Contact Us</a>
       </nav>
@@ -488,7 +499,10 @@
   max-width: 1200px;
   margin: 0 auto;
   
+  
 }
+
+
 
 .card {
   background: #000b33;
@@ -514,7 +528,7 @@
   padding: 0 16px 20px;
   font-size: 0.95rem;
   line-height: 1.5;
-  text-align: justify;
+  text-align: left;
 }
 
 </style>
@@ -647,6 +661,7 @@
       font-size: 16px;
       color: #333;
       line-height: 1.5;
+      
     }
 
     @media (max-width: 600px) {
@@ -763,103 +778,109 @@
     <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Partners</title>
   <style>
- 
-
-    h1 {
-      font-size: 35px;
-      font-weight: bold;
-      color: #005aa7;
-      margin-bottom: 30px;
-
-      align-items: center;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
     }
 
-    p.description {
-      max-width: 800px;
-      margin: 0 auto 30px;
-      font-size: 0.5em;
-      color: #444;
+    .partners-section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    h1 {
+          font-size: 2em;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: #005aa7;
+        }
+
+    .partners-title {
+      font-size: 32px;
+      font-weight: bold;
+      color: #005aa7;
+      margin-bottom: 40px;
     }
 
     .logo-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 30px;
-      justify-items: center;
-      align-items: center;
-      padding: 0 20px;
-      margin-left: 400px;
-      margin-right: 400px;
-
+      grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+      gap: 25px;
     }
 
     .logo-box {
-      
+      background: #fff;
       border-radius: 10px;
-      padding: 20px;
+      padding: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
       display: flex;
-      justify-content: center;
       align-items: center;
-      height: 120px;
+      justify-content: center;
+      transition: transform 0.3s ease;
       width: 120px;
-      
+      height: 120px;
+    }
+
+    .logo-box:hover {
+      transform: translateY(-5px);
     }
 
     .logo-box img {
-      max-height: 180px;
       max-width: 100%;
+      max-height: 100px;
       object-fit: contain;
     }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2em;
-      }
+    @media (max-width: 768px) {
+  .logo-grid {
+    
+    justify-items: center;
+  }
 
-      .logo-box {
-        height: 100px;
-        width: 100px;
-        padding: 15px;
-      }
-      .logo-box img {
-      max-height: 80px;
-      max-width: 100%;
-      object-fit: contain;
-    }
-      .logo-grid{
-        margin-left: 2px;
-        margin-right: 1px;
-        gap: 20px;
-      }
-    }
+  .logo-box img {
+    max-height: 120px;
+  }
+  h1 {
+          font-size: 2em;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: #005aa7;
+        }
+}
+
   </style>
 </head>
 <body>
-  <br><br><br><br><br>
- <center> <h1>OUR PARTNERS</h1></center><br><br>
+<br><br>
+  <section class="partners-section">
+    <center> <h1>OUR SPONSORS AND PARTNERS</h1></center><br><br>
+    <div class="logo-grid">
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioR4vCepcwhfMzLBTt9r0SpiUb7uePoFzjasRHb2ToitJNl1jOoh2-cgIcupZUU6b7QtVis8G4jsHnFO7P5PtcXUnj-0arkHmU7SDUiAlny4HGDc20s8oFqsxB4pUtf5nngmUvVy2DE6PHS6IvoGNabsXYLW1LDUV5Ao0dkz5_Wo2qbkEabfWIZcOMedRf/s320/1000091267.png" alt="FedEx Logo" />
+      </div>
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBFr3J8a4otmNMk8AyZgEFn1AfTT_arOEHJlURPVxkDdzmijaBa1vtqOr4ElrXtGs5Za_fa-cRt0l3DfE17WkdicAUsTP3w9K86W-w5fUCWfNYFfxPq2M9nBOEg_xX1FMrCwQjSZ0qsjtYHlKrz1-FfKD2lhRvcviBMwBYG-0oqkz8tIBwj0aQKFqs09Ca/s320/1000091273.png" alt="EU Logo" />
+      </div>
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHcpS_QHhCLC8F7NTLJjYqiA-QPbpDGB2pn2xGMM_bOK6Ls38HmDeZRStqe62lPNtHdtDuzggmR-PN9gaQJpX-n31gtwTub6jDDbL9-BDAIqs_W3gZfh0tvlUzyBxyaprSIiIwMVBp4L2I7yuiPz_EHXDjxDb2OQVkxwMD0vefnCVMRotCujvocpd3eLFx/s320/1000091042.png" alt="Adidas Logo" />
+      </div>
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxD1xH9-Ni8xyGsBSAVZRkThiKI6sbfAnyR9K-4giWy0Uzk3YFH5-phaUSo4-Kg65-Wu4EITBYZAdxslFH6uRYcxdVJBsc9eO4t0suCltCmwXCQiYq6nPqJSt9MRQLp4HRhjT78Wd2FKnA2J8Qk22AwUPta-G0woM1t46GTZtZ0Sjg-slfUuqC8ULrZgwQ/s320/1000091047.png" alt="Hankook Logo" />
+      </div>
+    
+      <div class="logo-box">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic2MR5DTY74Tt3Yc5Tkl_L4OIs0VminkoiPG0afXZQOr7VJ0NwRxH5cCjwCOWlEHj6aHjAzO4z-ASaRtnmIH3c7Ns3g9DL7WneVexFdvlm82Dk4uvn_iai1iZaOD5LMuFle3yegvh6sR2-eNF77hhVJXbT6WcULGCsg1XNrNG8Pt1lsf5kGhVMyRVyX9B5/s320/1000091268.png" alt="FedEx Logo" />
+      </div>
+     </div>
+     
 
-  <div class="logo-grid">
-    <div class="logo-box">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir9Y4EFscKq1RfGftpilgT4PMj6Ur24hrfJw_YFWLMp32ZAD3YsnGFpQiKvWmYCoEEvmDFxEazfJYlPkct4w0gfs6aILnroXkMS-5zJNE50FPtsbAL5hbZS7uuyVMQ2CLndsnqQZUhBmILEGf7Ae36KvdbAGKPQ8hv-svMbiEZV8Ox5PC6JP3EU-DdVF2t/s320/1000091050.png" alt="FedEx Logo" />
-    </div>
-    <div class="logo-box">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg696x_LJ8FJwNHrM716RJnVnlp2JfN47BTKqqE7MwQG1N6MNENWbCXgIW05N2NDL4LbbkcK6zpsHzp8yD-JkabiRyI2XzG4c22-XAnOigZilxyB3FqCt1CHynWO2xdoPEI1HvtkNg5WJ0CP-HLiAiqDjOnebjCz8UU1XXrV9SQRQY4PsQy3IxhVz1lZDeX/s320/1000091048.png" alt="EU Logo" />
-    </div>
-    <div class="logo-box">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwMvJ0R-F3WVnSkyaUBUen780D7PMywvcogCuwbHep2B_xw85xWPp6xw8F4ivpP-h1KwBnsiJsoj64mCMyq2FG-Ow1HDOFFKXmuQBtqwlcUwUps9BkU3Bm2GOzRccpFkdwKqlADqxM3Q5mEWkOuxTtdreHjdX3QxexPl-D81oBfEDKMKxV6mQUr1UICBRW/s320/1000091039.png" alt="Adidas Logo" />
-    </div>
-    <div class="logo-box">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg46yZ8pQuA7WmnTiiT1wh9UHBy-4ugbH1IaK9IDg1AH4Tci2NJxwUOB3KfFcNQ6ZQyeFPTGWJTx8BCOxc-B05-ikRLfUDUSNuspASKXZemAHTxZXYZuxeqAnbv6nC46PBJDxZNf6rxgHTzfBmhRkMjD4I_OOKwvzeGaWzL-G7mT4Jgtnl1Kd-WWL2Wal-w/s320/1000091038.png" alt="Hankook Logo" />
-    </div>
-    <div class="logo-box">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHcpS_QHhCLC8F7NTLJjYqiA-QPbpDGB2pn2xGMM_bOK6Ls38HmDeZRStqe62lPNtHdtDuzggmR-PN9gaQJpX-n31gtwTub6jDDbL9-BDAIqs_W3gZfh0tvlUzyBxyaprSIiIwMVBp4L2I7yuiPz_EHXDjxDb2OQVkxwMD0vefnCVMRotCujvocpd3eLFx/s320/1000091042.png" alt="FedEx Logo" />
-    </div>
-   
-  </div><br><br>
+     <br><br> <br><br>
   <style>
   
     .donate-btn {
@@ -890,8 +911,12 @@
     SEE MORE →
   </a></center><BR><BR>
   <br><br><br><br>
+  </section>
+
 </body>
 </html>
+
+<br><br>
   </section>
 
 
@@ -961,7 +986,7 @@
 
     .site-footer {
       background-color: #111;
-      color: #fff;
+      color: #ffffff;
       width: 100%;
     }
 
@@ -983,7 +1008,7 @@
     .footer-column h3 {
       font-size: 16px;
       margin-bottom: 8px;
-      border-bottom: 1px solid #444;
+      border-bottom: 1px solid #ffffff;
       padding-bottom: 5px;
     }
 
@@ -1018,7 +1043,7 @@
   align-items: center;
   padding: 15px 20px;
   font-size: 13px;
-  border-top: 1px solid #333;
+  border-top: 1px solid #ffffff;
   color: #ccc;
   position: relative;
 }
@@ -1030,7 +1055,7 @@
 }
 
 .footer-bottom a {
-  color: #ccc;
+  color: #ffffff;
   text-decoration: none;
 }
 
